@@ -1,0 +1,40 @@
+.mode-switcher {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .switcher-circle {
+    height: 26px;
+    width: 26px;
+    border: 1px solid grey;
+    background-color: grey;
+    border-radius: 50%;
+  }
+
+  &.light {
+    border-color: #000;
+    background-color: #000;
+    .switcher-circle {
+      margin-left: auto;
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mode-switcher {
+    bottom: auto;
+    top: 30px;
+  }
+}
